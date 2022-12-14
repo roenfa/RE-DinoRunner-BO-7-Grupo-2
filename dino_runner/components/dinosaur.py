@@ -1,7 +1,8 @@
 from dino_runner.utils.constants import RUNNING, JUMPING, DEFAULT_TYPE
 import pygame
+from pygame.sprite import Sprite
 
-class Dinosaur:
+class Dinosaur(Sprite):
     X_POS = 80
     Y_POS = 310
     JUMP_VEL = 8.5
